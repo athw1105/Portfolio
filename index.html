@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atharva Waghmare | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Atharva Waghmare</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                     <li><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li><a class="nav-link" href="#education">Education</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a href="Atharva_Resume.pdf" class="btn btn-info" download>Resume</a></li>
+                    <li><button class="btn btn-outline-info" onclick="toggleTheme()">🌙</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero text-center">
+        <h1 data-aos="fade-up">Hi, I'm <span>Atharva Waghmare</span></h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+    <span id="typing-skill"></span>
+</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container section">
+        <div class="row align-items-center">
+            <div class="col-md-4" data-aos="fade-right">
+                <img src="atharva.png" class="profile-img" alt="Atharva">
+            </div>
+            <div class="col-md-8" data-aos="fade-left">
+                <h2>About Me</h2>
+                <p>
+                    I am an aspiring Full Stack Java Developer with a strong foundation in Java programming and core web
+                    development technologies. I enjoy designing and building scalable, efficient, and maintainable
+                    applications with a focus on clean code and best practices.
+
+                    I have hands-on experience working with backend technologies like Java, JDBC, and MySQL, along with
+                    frontend technologies such as HTML, CSS, Bootstrap, and JavaScript, enabling me to develop complete
+                    end-to-end solutions. I continuously enhance my skills by building real-world projects, exploring
+                    modern frameworks, and solving practical problems.
+
+                    I am passionate about learning new technologies, improving application performance, and creating
+                    user-friendly interfaces. With a growth mindset and strong problem-solving skills, I aim to evolve
+                    into a professional full-stack developer who can contribute effectively to impactful software
+                    projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="container section">
+        <h2 data-aos="fade-up">Skills</h2>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card-box">Java</div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card-box">SQL & JDBC</div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card-box">HTML, CSS, JS</div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card-box">Spring/Springboot</div>
+            </div>
+            <div class="col-md-4" data-aos="zoom-in">
+                <div class="card-box">Git & GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <!-- PROJECTS -->
+    <section id="projects" class="container section">
+        <h2 class="text-center mb-5" data-aos="fade-up">Projects</h2>
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-6" data-aos="fade-right">
+                <div class="project-card">
+                    <h4>PDF Extraction using RAG</h4>
+                    <p class="project-desc">
+                        Intelligent document processing system to extract structured data
+                        from complex PDF files.
+                    </p>
+
+                    <ul>
+                        <li>Implemented OCR for text extraction from scanned PDFs</li>
+                        <li>Used embeddings (BERT / Sentence-BERT) for semantic understanding</li>
+                        <li>Integrated LLMs for question answering & auto summarization</li>
+                        <li>Enabled semantic search across documents</li>
+                    </ul>
+
+                    <p class="tech">
+                        <strong>Tech Stack:</strong> Python, OCR, BERT, LLMs, RAG
+                    </p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-6" data-aos="fade-left">
+                <div class="project-card">
+                    <h4>CloudVault – Cloud File Storage System</h4>
+                    <p class="project-desc">
+                        Secure cloud-based file storage system with scalable backend.
+                    </p>
+
+                    <ul>
+                        <li>User authentication and secure file upload/download</li>
+                        <li>Integrated AWS S3 for reliable cloud storage</li>
+                        <li>Deployed application on AWS EC2 instance</li>
+                        <li>Implemented access control and file management features</li>
+                    </ul>
+
+                    <p class="tech">
+                        <strong>Tech Stack:</strong> Java, AWS S3, EC2, HTML, CSS
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+<section id="certifications" class="container section">
+  <h2 class="text-center mb-5" data-aos="fade-up">Certifications</h2>
+
+  <div class="row g-4 justify-content-center">
+
+    <!-- Certification 1 -->
+    <div class="col-md-4" data-aos="zoom-in">
+      <div class="cert-card">
+        <img src="Oracle.png" alt="Oracle OCI Certificate" class="cert-img">
+        <h5>Oracle Cloud Infrastructure</h5>
+        <p>Foundations Associate – 2025</p>
+        
+      </div>
+    </div>
+
+    <!-- Certification 2 -->
+    <div class="col-md-4" data-aos="zoom-in">
+      <div class="cert-card">
+        <img src="Accenture.png" alt="Accenture certificate" class="cert-img">
+        <h5>Accenture Nordics</h5>
+        <p>Software Engineering Job Simulation</p>
+        
+      </div>
+    </div>
+
+    <!-- Certification 3 -->
+    <div class="col-md-4" data-aos="zoom-in">
+      <div class="cert-card">
+        <img src="GDG.png" alt="GDG" class="cert-img">
+    <h5>Google Developer Group</h5>
+        <p>Certificate of Appreciation</p>
+        
+      </div>
+    </div>
+
+    <!-- Certification 4 -->
+    <div class="col-md-4" data-aos="zoom-in">
+      <div class="cert-card">
+        <img src="tcs.png" alt="tcs certificate" class="cert-img">
+        <h5>TCS ion </h5>
+        <p>Devlopment of Softskills that industry demands</p>
+        
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <!-- EDUCATION TIMELINE -->
+    <section id="education" class="container section">
+        <h2 class="text-center mb-5" data-aos="fade-up">Education</h2>
+
+        <div class="timeline">
+
+            <!-- B.E -->
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>B.E Computer Engineering</h4>
+                    <span>2022 – 2026</span>
+                    <p>
+                        Matoshri College of Engineering, Nashik<br>
+                        <strong>CGPA: 7.74</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 12th -->
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>HSC (12th)</h4>
+                    <span>2022</span>
+                    <p>
+                        Kendriya Vidyalaya, I.S.P Nehru Nagar, Nashik Road<br>
+                        <strong>65%</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 10th -->
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h4>SSC (10th)</h4>
+                    <span>2019</span>
+                    <p>
+                        Kendriya Vidyalaya, I.S.P Nehru Nagar, Nashik Road<br>
+                        <strong>85%</strong>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container section text-center">
+        <h2 data-aos="fade-up">Contact</h2>
+
+        <div class="row justify-content-center mt-4 g-4">
+
+            <!-- Phone -->
+            <div class="col-md-3" data-aos="zoom-in">
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone icon"></i>
+                    <h5>Phone</h5>
+                    <p><a href="tel:+919322022927">+91 93220 22927</a></p>
+                </div>
+            </div>
+
+            <!-- GitHub -->
+            <div class="col-md-3" data-aos="zoom-in">
+                <div class="contact-card">
+                    <i class="fa-brands fa-github icon"></i>
+                    <h5>GitHub</h5>
+                    <p>
+                        <a href="https://github.com/athw1105" target="_blank">
+                            github.com/athw1105
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="col-md-3" data-aos="zoom-in">
+                <div class="contact-card">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                    <h5>LinkedIn</h5>
+                    <p>
+                        <a href="https://www.linkedin.com/in/atharvaw/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank">
+                            View Profile
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <a href="mailto:atharvawaghmare1104@gmail.com" class="btn btn-outline-info">
+  <i class="fas fa-paper-plane"></i> Email Me
+</a>
+
+
+        </div>
+    </section>
+
+
+
+    <footer class="text-center">
+        © 2026 Atharva Waghmare
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+    const skills = [
+        "Full Stack Java Developer",
+        "Spring Boot",
+        "JDBC",
+        "SQL"
+    ];
+
+    let index = 0;
+    let charIndex = 0;
+    const typingSpeed = 80;
+    const erasingSpeed = 40;
+    const delayBetween = 1200;
+
+    const element = document.getElementById("typing-skill");
+
+    function typeSkill() {
+        if (charIndex < skills[index].length) {
+            element.textContent += skills[index].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeSkill, typingSpeed);
+        } else {
+            setTimeout(eraseSkill, delayBetween);
+        }
+    }
+
+    function eraseSkill() {
+        if (charIndex > 0) {
+            element.textContent = skills[index].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(eraseSkill, erasingSpeed);
+        } else {
+            index = (index + 1) % skills.length;
+            setTimeout(typeSkill, typingSpeed);
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        typeSkill();
+    });
+</script>
+
+<script>
+    const navbar = document.getElementById("mainNavbar");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 60) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+</script>
+
+</body>
+
+</html>
